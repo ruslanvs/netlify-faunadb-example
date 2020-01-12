@@ -3,21 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "faunadb": "^2.6.1",
+    "faunadb": "^2.10.2",
     "markdown-magic": "^1.0.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-scripts": "2.1.3"
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "^3.3.0"
   },
   "scripts": {
     "bootstrap": "netlify dev:exec node ./scripts/bootstrap-fauna-database.js",
     "docs": "md-magic --path '**/*.md' --ignore 'node_modules'",
     "start": "netlify dev",
-    "prebuild": "echo 'setup faunaDB' && npm run bootstrap",
+    "prebuild": "echo 'setup faunaDB' && yarn bootstrap",
     "build": "react-scripts build"
   },
   "devDependencies": {
-    "netlify-cli": "^2.19.0"
+    "netlify-cli": "^2.29.0"
   },
   "browserslist": [
     ">0.2%",
